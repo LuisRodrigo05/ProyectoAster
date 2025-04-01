@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=3 uid="uid://c84n2x0oh6byc"]
+
+[ext_resource type="Texture2D" uid="uid://c1w7wekwumn10" path="res://assets/Suelo.png" id="1_fw4w5"]
+[ext_resource type="PackedScene" uid="uid://s1quub5ob4bh" path="res://arbol.tscn" id="2_otwa2"]
+[ext_resource type="PackedScene" uid="uid://dq728xw3q4gw7" path="res://jugador.tscn" id="3_aou4a"]
+
+[node name="Mundo" type="Node2D"]
+y_sort_enabled = true
+
+[node name="Suelo" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(575.5, 325.5)
+scale = Vector2(5.09778, 2.85778)
+texture = ExtResource("1_fw4w5")
+
+[node name="Arbol" parent="." instance=ExtResource("2_otwa2")]
+position = Vector2(244, 200)
+
+[node name="Arbol2" parent="." instance=ExtResource("2_otwa2")]
+position = Vector2(196, 563)
+
+[node name="Arbol3" parent="." instance=ExtResource("2_otwa2")]
+position = Vector2(763, 221)
+
+[node name="Arbol4" parent="." instance=ExtResource("2_otwa2")]
+position = Vector2(712, 576)
+
+[node name="Arbol5" parent="." instance=ExtResource("2_otwa2")]
+position = Vector2(984, 397)
+
+[node name="Jugador" parent="." instance=ExtResource("3_aou4a")]
+position = Vector2(407, 231)

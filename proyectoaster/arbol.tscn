@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://s1quub5ob4bh"]
+
+[ext_resource type="Texture2D" uid="uid://bmh7hq0h460dw" path="res://assets/Arbol.png" id="1_omjyp"]
+
+[node name="Arbol" type="StaticBody2D"]
+scale = Vector2(1.5, 1.5)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(2, -52)
+texture = ExtResource("1_omjyp")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-25, -1, 26, -1, 26, -6, 24, -6, 24, -9, 19, -9, 18, -11, 14, -12, 14, -18, -13, -18, -13, -12, -16, -11, -17, -10, -17, -8, -22, -8, -23, -6, -25, -5)
